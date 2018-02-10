@@ -16,6 +16,10 @@ class Verkkopankki_model extends CI_Model {
 		return $this->db->get('Permissions')->result_array();
 	}
 
+	public function returnClientInfo() {
+		return $this->db->get('Client')->result_array();
+	}
+
 	public function login($username, $password) { #login script which sets sessiondata
 		$login = array(
 			'username' => $username,

@@ -7,10 +7,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
 </head>
 <body>
-	<div class="main-wrapper">
-	<nav class="inside-block">
+	<nav>
 		<a href="<?php echo site_url('verkkopankki/home'); ?>">Koti</a>
 		<a href="<?php echo site_url('verkkopankki/loginpage'); ?>">Verkkopankki kirjautuminen</a>
-		<a href="<?php echo site_url('verkkopankki/adminlogin'); ?>">Pankkivirkailija</a>
+		<a href="<?php echo site_url('verkkopankki/adminpage'); ?>">Pankkivirkailija</a>
 		<a href="<?php echo site_url('verkkopankki/cardlogin'); ?>">Kortilla kirjautuminen</a>
 	</nav>
+	<div id="page-content">

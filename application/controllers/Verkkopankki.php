@@ -8,6 +8,14 @@ class Verkkopankki extends CI_Controller {
 		$this->load->view('content/content',$data);
 	}
 
+	public function adminPage() {
+		$this->load->model('Verkkopankki_model');
+		$data['page'] = 'verkkopankki/adminpage';
+		$data['message'] = 'Asiakas- sekä tilitiedot';
+		$data['clients'] = $this->Verkkopankki_model->returnClientInfo();
+		$this->load->view('content/content',$data);
+	}
+
 	public function home() {
 		$data['page'] = 'verkkopankki/home';
 		$data['message'] = '';
