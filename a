@@ -1,0 +1,10 @@
+<h2>Kirjat</h2>
+<?php
+	foreach ($books as $book) {
+		echo 'ID: '.$book['book_id']
+		.'BN:'.$book['book_name']
+		.'AU: '.$book['author']
+		.'ISBN: '.$book['isbn']
+		.'<br>';
+	}
+?>
