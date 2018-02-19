@@ -1,6 +1,6 @@
 <?php
 $this->load->view('content/header');
 $this->load->view($page);
-echo $message.'<br>';
+echo '<p>'.$message.'</p>';
 $this->load->view('content/footer');
 ?>
